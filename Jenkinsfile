@@ -83,7 +83,7 @@ pipeline {
         stage('Deploy to Homolog') {
             agent {  
                 node {
-                    label 'homolog'
+                    label 'homol'
                 }
             }
 
