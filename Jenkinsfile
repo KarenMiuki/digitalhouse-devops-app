@@ -91,7 +91,7 @@ pipeline {
                 script {
                     if(env.GIT_BRANCH=='origin/master'){
  
-                        docker.withRegistry:('https//893817927886.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecraws') {
+                        docker.withRegistry:('https://893817927886.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecraws') {
                             docker.image('digitalhouse-devops-app').pull()
                         }
 
@@ -123,7 +123,7 @@ pipeline {
                 script {
                     if(env.GIT_BRANCH=='origin/master'){
 
-                        docker.withRegistry('https//893817927886.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecraws') {
+                        docker.withRegistry('https://893817927886.dkr.ecr.us-east-1.amazonaws.com', 'ecr:us-east-1:ecraws') {
                             docker.image('digitalhouse-devops-app').pull()
                         }
 
